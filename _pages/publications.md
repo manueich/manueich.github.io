@@ -4,7 +4,9 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
+<br />
+<br />
+<br />
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
