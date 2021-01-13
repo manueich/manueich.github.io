@@ -7,6 +7,9 @@ author_profile: true
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
