@@ -86,7 +86,7 @@ author:
   location         : "Germany"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=vPHeFOYAAAAJ&hl=en"
   email            : "manuel.eichenlaub@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
