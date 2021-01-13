@@ -16,7 +16,7 @@ M. Eichenlaub, J. Hattersley, N. Khovanova (2019):  "A Minimal Model Approach fo
 	
 M. Eichenlaub, J. Hattersley, N. Khovanova (2019):  "A Model Describing the Multiphasic Dynamics of Mixed Meal Glucose Responses in Healthy Subjects". In: World Congress on Medical Physics and Biomedical Engineering 2018. IFMBE Proceedings, vol 68/1.
 
-M. Eichenlaub (2020): "Mathematical Modelling of Glucose Dynamics in normal and impaired glucose tolerance", PhD Thesis, University of Warwick
+M. Eichenlaub (2020): "Mathematical Modelling of Glucose Dynamics in normal and impaired glucose tolerance", PhD Thesis, University of Warwick [PDF](http://manueich.github.io/files/paper1.pdf)
 
 <br />
 
