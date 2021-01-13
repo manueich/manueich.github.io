@@ -7,7 +7,7 @@ author_profile: true
 <br />
 
 Glucose Dynamics Modelling
-======
+------
 **M. Eichenlaub**, J. Hattersley, M. Gannon, F. Nuttall, N. Khovanova (2020):  "Bayesian identification of the oral minimal model of glucose dynamics from non-fasting conditions using a new function of glucose appearance". In: Computer Methods and Programs in Biomedicine (article in press).
 
 **M. Eichenlaub**, J. Hattersley, N. Khovanova (2020):  "Modelling of Glucose Dynamics and Estimation of Insulin Sensitivity from Glucose Data Only". In: 2019 Diabetes Technology Meeting Abstracts, Journal of Diabetes Science and Technology, 14 (2).
@@ -21,7 +21,7 @@ Glucose Dynamics Modelling
 <br />
 
 Sleep Monitoring
-======
+------
 C. Kalkbrenner, **M. Eichenlaub**, S. Rüdiger, C. Kropf-Sanchen, W. Rottbauer, R. Brucher (2018): "Apnea and heart rate detection from tracheal body sounds for the diagnosis of sleep-related breathing disorders". In: Medical and Biological Engineering and Computing 56(4), p. 671-681
 
 C. Kalkbrenner, **M. Eichenlaub**, S. Rüdiger, C. Kropf-Sanchen, R. Brucher, W. Rottbauer (2017): "Validation of a New System Using Tracheal Body Sound and Movement Data for Automated Apnea-Hypopnea Index Estimation". In: Journal of Clinical Sleep Medicine 13(10), p. 1123-1130.
