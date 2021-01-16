@@ -10,7 +10,13 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+------
+* Ph.D. in Engnieering, 2020  
+  University of Warwick, School of Engineering, Biological and Biomedical Systems Laboratory  
+  Thesis: "Mathematiccal modelling of glucose dynamics in normal and impaired glucose tolerance"
+* M.Eng. in Medical Engnieering, 2015  
+  University of Applied Sciences Ulm     
+  Dissertation: "Acquisition and analysis of body sound for the ambulatory diagnosis of sleep-related breathing disorders"
+* B.Sc. in Medical Engnieering, 2013  
+  University of Applied Sciences Furtwangen  
+  Dissertation: "Design and construction of a device for the fatigue testing of coronary stents"
