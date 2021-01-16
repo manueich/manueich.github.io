@@ -4,7 +4,6 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-<br />
 
 Glucose Dynamics Modelling
 ------
@@ -18,7 +17,6 @@ Glucose Dynamics Modelling
 
 **M. Eichenlaub** (2020): "Mathematical modelling of glucose dynamics in normal and impaired glucose tolerance", PhD Thesis, University of Warwick  \[[PDF](http://manueich.github.io/files/pubs/Thesis_Eichenlaub.pdf)\]
 
-<br />
 
 Sleep Monitoring
 ------
