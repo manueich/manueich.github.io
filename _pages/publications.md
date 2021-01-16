@@ -12,7 +12,7 @@ Glucose Dynamics Modelling
 
 **M. Eichenlaub**, J. Hattersley, N. Khovanova (2020):  "Modelling of Glucose Dynamics and Estimation of Insulin Sensitivity from Glucose Data Only". In: 2019 Diabetes Technology Meeting Abstracts, Journal of Diabetes Science and Technology, 14 (2). \[[PDF](http://manueich.github.io/files/pubs/Glucose_DTM19.pdf)\]
 
-**M. Eichenlaub**, J. Hattersley, N. Khovanova (2019):  "A Minimal Model Approach for the Description of Postprandial Glucose Responses from Glucose Sensor Data in Diabetes Mellitus". \textit{In: 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Berlin, 23-27 July 2019, p. 265-268 \[[PDF](http://manueich.github.io/files/pubs/Glucose_EMBC19.pdf)\]
+**M. Eichenlaub**, J. Hattersley, N. Khovanova (2019):  "A Minimal Model Approach for the Description of Postprandial Glucose Responses from Glucose Sensor Data in Diabetes Mellitus". In: 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Berlin, 23-27 July 2019, p. 265-268 \[[PDF](http://manueich.github.io/files/pubs/Glucose_EMBC19.pdf)\]
 	
 **M. Eichenlaub,** J. Hattersley, N. Khovanova (2019):  "A Model Describing the Multiphasic Dynamics of Mixed Meal Glucose Responses in Healthy Subjects". In: World Congress on Medical Physics and Biomedical Engineering 2018. IFMBE Proceedings, vol 68/1. \[[PDF](http://manueich.github.io/files/pubs/Glucose_IUPESM18.pdf)\]
 
