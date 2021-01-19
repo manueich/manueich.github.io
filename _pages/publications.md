@@ -25,3 +25,7 @@ C. Kalkbrenner, **M. Eichenlaub**, S. Rüdiger, C. Kropf-Sanchen, W. Rottbauer, 
 C. Kalkbrenner, **M. Eichenlaub**, S. Rüdiger, C. Kropf-Sanchen, R. Brucher, W. Rottbauer (2017): "Validation of a New System Using Tracheal Body Sound and Movement Data for Automated Apnea-Hypopnea Index Estimation". In: Journal of Clinical Sleep Medicine 13(10), p. 1123-1130. \[[PDF](http://manueich.github.io/files/pubs/Apnea_JCSM.pdf)\]
 
 C. Kalkbrenner, R. Brucher, T. Kesztyüs, **M. Eichenlaub**, W. Rottbauer, D. Scharnbeck (2019): "Automated sleep stage classification based on tracheal body sound and actigraphy". In: GMS German Medical Science 17 \[[PDF](http://manueich.github.io/files/pubs/Staging_GMS.pdf)\]
+
+Miscellaneous
+------
+**M. Eichenlaub** (2021): "On the relationship between a Gamma distributed precision parameter and the associated standard deviation in the context of Bayesian parameter inference", arXiv:2101.06289, \[[Link](https://arxiv.org/abs/2101.06289)\]
