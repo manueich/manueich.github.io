@@ -7,7 +7,7 @@ author_profile: true
 
 Glucose Dynamics Modelling
 ------
-**M. Eichenlaub**, J. Hattersley, M. Gannon, F. Nuttall, N. Khovanova (2020):  "Bayesian identification of the oral minimal model of glucose dynamics from non-fasting conditions using a new function of glucose appearance". In: Computer Methods and Programs in Biomedicine (article in press).
+**M. Eichenlaub**, J. Hattersley, M. Gannon, F. Nuttall, N. Khovanova (2021):  "Bayesian identification of the oral minimal model of glucose dynamics from non-fasting conditions using a new function of glucose appearance". In: Computer Methods and Programs in Biomedicine, 200. \[[Link](https://www.sciencedirect.com/science/article/pii/S0169260720317442)\]
 
 **M. Eichenlaub**, J. Hattersley, N. Khovanova (2020):  "Modelling of Glucose Dynamics and Estimation of Insulin Sensitivity from Glucose Data Only". In: 2019 Diabetes Technology Meeting Abstracts, Journal of Diabetes Science and Technology, 14 (2). \[[PDF](http://manueich.github.io/files/pubs/Glucose_DTM19.pdf)\]
 
