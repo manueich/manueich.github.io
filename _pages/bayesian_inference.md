@@ -18,6 +18,7 @@ Bayesian inference is a powerful tool to identify a variety of statistical model
 In this tutorial, we will discuss the following basic linear regression model:
 
 $$y = w f(x) + \varepsilon$$
+
 $$\varepsilon \sim \mathcal{N}(0,\beta^{-1})$$
 
 The input and output (or target), collectively referred to as data $\mathcal{D}$, of the model are $x$ and $y$, respectively. The function $f$ can be any continous function of the input $x$. The model has two unkonwn parameters that we want to infer from the data $\mathcal{D}$: the slope parameter $w$ and the precision $\beta$ (inverse of the variance) of the measurement noise $\varepsilon$. For the purpose of illustration we will assume the parameter $w$ to be one dimensional. 
