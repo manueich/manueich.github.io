@@ -6,6 +6,6 @@ author_profile: true
 ---
 text 
 
-\[[Link](BI_True.md)\]
+\[[Link](Bayesian_Inference/BI_True.md)\]
 
 
