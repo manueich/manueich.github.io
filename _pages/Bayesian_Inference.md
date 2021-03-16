@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Bayesian Inference"
-excerpt: "Bayesian Inference"
+title: "bayesian_inference"
+excerpt: "bayesian_inference"
 author_profile: true
 ---
 
