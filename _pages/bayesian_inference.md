@@ -1,9 +1,9 @@
 ---
 layout: archive
-title: "Bayesian Inference"
+title: "Tutorial on Bayesian Inference"
 permalink: /bayesian_inference/
 author_profile: true
 ---
-text
+text 
 
 
