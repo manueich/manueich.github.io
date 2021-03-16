@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Analytic Bayesian Inference"
-author_profile: true
+author_profile: false
 ---
 The exact analytical solution to the Bayesian linear regression problem is described in detail in the Wikipedia entry on [Bayesian Linear regression](https://en.wikipedia.org/wiki/Bayesian_linear_regression). We will thus refrain from explaining every mathematical detail on focus on the main steps and results.
 

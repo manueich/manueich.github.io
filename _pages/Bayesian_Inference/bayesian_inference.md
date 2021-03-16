@@ -2,7 +2,7 @@
 layout: archive
 title: "Tutorial on Approximate Bayesian Inference"
 permalink: /bayesian_inference/
-author_profile: true
+author_profile: false
 ---
 
 ## Aim and Scope of this Tutorial
