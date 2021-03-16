@@ -23,6 +23,8 @@ In future use, it will also be useful to have the log-likelihood which is define
 
 $$\log L(\mathcal{D}|w,\beta) = \frac{N}{2}\log \frac{\beta}{2\pi}-\frac{\beta}{2}\left[y^Ty-2wy^Tf(x)+f(x)^Tf(x)w^2\right]$$
 
+The $\log$ refers to the natural logarithm with base $e$.
+
 ### The Prior Distribution
 
 

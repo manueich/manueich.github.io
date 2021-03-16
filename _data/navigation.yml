@@ -9,6 +9,6 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Bayesian Inference"
-    url: /bayesian_inference/
+  - title: "Tutorials"
+    url: /tutorials/
  
