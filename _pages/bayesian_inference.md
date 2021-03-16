@@ -5,9 +5,11 @@ permalink: /bayesian_inference/
 author_profile: true
 ---
 
-## Aim and Scope
+## Aim and Scope of this Tutorial
 
-This tutorial exemplifies the use of approximate Bayesian inference with both a variational Bayesian (VB) and Markov Chain Monte Carlo (MCMC) approach on a very simple linear regression model. It is aimed at people who already have a basic understanding of probability theory including Bayes' rule, probability density functions and expectations and want to understand the inner workings, advantages and disadvantages of VB and MCMC approaches. This is important to apply both approaches to more complex datasets and models.
+This tutorial exemplifies the use of approximate Bayesian inference with both a variational Bayesian (VB) and Markov Chain Monte Carlo (MCMC) approach on a very simple linear regression model. It is aimed at people who already have a basic understanding of probability theory including Bayes' rule, probability density functions and expectations and want to understand the inner workings, advantages and disadvantages of VB and MCMC approaches. 
+
+There are a lot of tutorials on either approaches but I have not come across a tutorial that explains and describes both methods on the same model. I hope the following documents will fill this gap. The accompanying code in MATLAB and Python is also published. The described concepts are mainly taken from and expanded upon [Bishop's "Pattern Recognition and Machine Learning" (2006)](https://www.springer.com/gp/book/9780387310732).    
 
 ## Introduction
 
