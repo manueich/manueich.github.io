@@ -5,4 +5,4 @@ permalink: /tutorials/
 author_profile: true
 ---
 
-[Tutorial on Approximate Bayesian Inference](\Bayesian_Inference\bayesian_inference.md)
+[Tutorial on Approximate Bayesian Inference](Bayesian_Inference/bayesian_inference.md)
