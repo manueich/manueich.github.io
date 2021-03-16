@@ -1,7 +1,7 @@
 ---
-permalink: /
+layout: archive
 title: "Bayesian Inference"
-excerpt: "Bayesian Inference"
+permalink: /bayesian_inference/
 author_profile: true
 ---
 text
