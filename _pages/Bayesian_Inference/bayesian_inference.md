@@ -37,11 +37,11 @@ $$P(\mathcal{D})=\int L(\mathcal{D}|w,\beta)p(w,\beta) dw d\beta$$
 
 Model (1) -(2) is actually simple enough so so that the posterior distribution and marginal likelihood can be calculated analytically. However, for more complex models this is not the case and we have to resort to approximate inference. For this particular example model, having the analytic solution is very useful as it allows us to compare the 'true' solution with the approximate results we get from VB and MCMC. 
 
-The exact analytic solution is described [Part 1](Bayesian_Inference/BI_True.md).
+The exact analytic solution is described [Part 1](BI_True.md).
 
-The approximate solution using variational Bayesian is described in [Part 2](Bayesian_Inference/BI_VB.md).
+The approximate solution using variational Bayesian is described in [Part 2](BI_VB.md).
 
-The approximated solution using Markov Chain Monte Carlo is described in [Part 3](Bayesian_Inference/BI_MCMC.md).
+The approximated solution using Markov Chain Monte Carlo is described in [Part 3](BI_MCMC.md).
 
 
 
