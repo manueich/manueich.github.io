@@ -6,6 +6,6 @@ author_profile: true
 ---
 text 
 
-\[[Link](http://manueich.github.io/_pages/Bayesian_Inference/BI_True.md)\]
+\[[Link](BI_True.md)\]
 
 
