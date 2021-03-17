@@ -36,7 +36,7 @@ $$w_{ML} = \left(f(x)^Tf(x)\right)^{-1}f(x)^Ty$$
 
 $$w_{ML} = \left(f(x)^Tf(x)\right)^{-1}f(x)^Ty$$
 
-<center><img src="./logL.png" width="400" height="300"></center>
+<center><img src="Bayesian_Inference/logL.png" width="400" height="300"/></center>
 Figure 1: Example of the Maximum-Likelihood approach, which the read line indicating the ML point estimate.
 
 ### The Prior Distribution
