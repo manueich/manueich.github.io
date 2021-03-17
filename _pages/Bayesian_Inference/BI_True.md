@@ -27,9 +27,13 @@ The $\log$ refers to the natural logarithm with base $e$.
 
 ### Quick Detour: Maximum Likelihood
 
-In a non-Bayesian (frequentist) treatment of the parameter estimation problem, the likelihood function would be maximised with respect to the unknown parameters. This is known as a Maximum-Likelihood (ML) approach.
+In a non-Bayesian (frequentist) treatment of the parameter estimation problem, the likelihood function would be maximised with respect to the unknown parameters. This is known as a Maximum-Likelihood (ML) approach and can be done analytically to get a point estimate of the unknown parameters:
 
-<center><img src="logL.png" width="400" height="300"></center>
+$$w_{ML} = \left(f(x)^Tf(x)\right)^{-1}f(x)^Ty$$
+
+$$w_{ML} = \left(f(x)^Tf(x)\right)^{-1}f(x)^Ty$$
+
+<center><img src="../Bayesian_Inference/logL.png" width="400" height="300"></center>
 Figure 1: Example of the Maximum-Likelihood approach, which the read line indicating the ML point estimate.
 
 ### The Prior Distribution
