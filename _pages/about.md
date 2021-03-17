@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a trained biomedical engineer with a Ph.D. in the field of mathematical modelling of metabolic processes. My core interest lies in the collection and analysis of data, as well as the develoment of mathemtical models for the benefit of soceity. In particular my interest lies in the field of endocrinology and biomedice in general. I have extensive skills and expertise in the following areas:
+I am a trained biomedical engineer with a Ph.D. in the field of mathematical modelling of metabolic processes. My core interest lies in the collection and analysis of data, as well as the development of mathematical models for the benefit of society. In particular my interest lies in the field of endocrinology and biomedicine in general. I have extensive skills and expertise in the following areas:
 * Mathematical modelling of human blood glucose dynamics through nonlinear stochastic and deterministic differential equations
 * Statistical inference and Bayesian model identification in particular variational Bayesian analysis
 * Scientific computing and programming in MATLAB and Python
@@ -16,6 +16,10 @@ I am a trained biomedical engineer with a Ph.D. in the field of mathematical mod
 * Design and implementation of experimental and clinical studies on human subjects
 * Collection, processing and analysis of sound signals
 
-Additional inforamtion on my publications, software projects and CV can be found on the pages linked above.
+Additional information on my publications, software projects and CV can be found on the pages linked above.
+
+I also create online [tutorials](tutorials.md) on various topics.
+
+
 
 

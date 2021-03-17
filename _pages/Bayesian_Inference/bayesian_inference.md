@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Tutorial on Approximate Bayesian Inference"
+excerpt: "Tutorial on Approximate Bayesian Inference"
 permalink: /bayesian_inference/
 author_profile: false
 ---

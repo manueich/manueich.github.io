@@ -1,5 +1,6 @@
 ---
 layout: archive
+excerpt: "Tutorial on Approximate Bayesian Inference"
 author_profile: false
 ---
 [Back to main page](bayesian_inference.md)
