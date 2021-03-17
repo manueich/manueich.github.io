@@ -25,9 +25,12 @@ $$\log L(\mathcal{D}|w,\beta) = \frac{N}{2}\log \frac{\beta}{2\pi}-\frac{\beta}{
 
 The $\log$ refers to the natural logarithm with base $e$.
 
-In a non-Bayesian (frequentist) treatment of the parameter estimation problem, the likelihood function would be maximised with respect to the unknown parameters. This is known as a Maximum-Likelihood approach.
+### Quick Detour: Maximum Likelihood
 
-![](logL.png)
+In a non-Bayesian (frequentist) treatment of the parameter estimation problem, the likelihood function would be maximised with respect to the unknown parameters. This is known as a Maximum-Likelihood (ML) approach.
+
+<center><img src="logL.png" width="400" height="300"></center>
+Figure 1: Example of the Maximum-Likelihood approach, which the read line indicating the ML point estimate.
 
 ### The Prior Distribution
 
