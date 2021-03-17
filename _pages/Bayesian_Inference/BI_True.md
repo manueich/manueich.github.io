@@ -1,8 +1,11 @@
 ---
 layout: archive
-title: "Analytic Bayesian Inference"
 author_profile: false
 ---
+[Back to main page](bayesian_inference.md)
+
+# Analytic Bayesian Inference
+
 The exact analytical solution to the Bayesian linear regression problem is described in detail in the Wikipedia entry on [Bayesian Linear regression](https://en.wikipedia.org/wiki/Bayesian_linear_regression). We will thus refrain from explaining every mathematical detail on focus on the main steps and results.
 
 ### The Likelihood function
@@ -33,10 +36,12 @@ $$w_{ML} = \left(f(x)^Tf(x)\right)^{-1}f(x)^Ty$$
 
 $$w_{ML} = \left(f(x)^Tf(x)\right)^{-1}f(x)^Ty$$
 
-<center><img src="../Bayesian_Inference/logL.png" width="400" height="300"></center>
+<center><img src="/Bayesian_Inference/logL.png" width="400" height="300"></center>
 Figure 1: Example of the Maximum-Likelihood approach, which the read line indicating the ML point estimate.
 
 ### The Prior Distribution
 
+[Back to main page](bayesian_inference.md)
 
+[Part 2: Variational Bayesian](BI_VB.md)
 
