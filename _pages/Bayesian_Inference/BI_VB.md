@@ -5,20 +5,32 @@ excerpt: "Tutorial on Approximate Bayesian Inference"
 author_profile: false
 ---
 
-If we assume for a moment that our model is so complex that it is impossible  
+In variational Bayesian (VB) analysis, the posterior distribution over unknown parameters is approximated by assuming it has certain properties such as factorising in a specific way or taking a specific parametric form. Alongside the approximation of the posterior, the VB method also provides an estimation of the marginal likelihood. 
 
+## Recap
 
-In variational Bayesian (VB) analysis, the posterior distribution over unknown parameters is approximated by assuming it has certain properties such as factorising in a specific way or taking a specific parametric form. As we will see, this means that the true posterior distribution can never be exactly inferred.
+Before we can begin, we need establish some foundations with respect to the calculations of [expectations](https://en.wikipedia.org/wiki/Expected_value). The expectation of a function $f(x)$ with respect to some PDF $p(x)$ is expressed as follows:
 
+$$\mathbb{E}[f(x)]_{p(x)}=\int f(x)p(x)dx$$
 
-In contrast to the stochastic sampling methods, deterministic methods approximate
-the posterior distribution analytically by assuming it has certain properties such as
-factorising in a specific way or taking a specific parametric form. This means that the
-true posterior distribution can never be exactly inferred. In return, they are computationally
-much less expensive in comparison to sampling methods. Additionally, they
-approximate the model evidence along with the posterior distribution over unknown
-parameters [87], which makes them particularly useful for the modelling task in this
-thesis. The utility of such a parameter estimation technique in the field of glucose dy
+In words, the expectation gives us the expected value of $f(x)$ if we assume that the random variable $x$ follows the PDF $p(x)$. A simple example is the expectation of a Normal distribution:
+
+$$\mathbb{E}[x]_{\mathcal{N}(x|\mu,\tau^{-1})}=\int x\mathcal{N}(x|\mu,\tau^{-1})dx=\mu$$
+
+In words, we expect a random variable $x$ to take the value of the mean $\mu$ if a follows a normal distribution. As we have seen before, the expectation of a Gamma distribution is:
+
+$$\mathbb{E}[x]_{\mathcal{Ga}(x|a,b)}=\int x\mathcal{Ga}(x|a,b)dx=\frac{a}{b}$$
+
+A few more expectations that we will need to know are:
+
+$$\mathbb{E}[x^2]_{\mathcal{N}(x|\mu,\tau^{-1})}=\mu^2+\frac{1}{\tau},$$
+
+$$\mathbb{E}[\log x]_{\mathcal{Ga}(x|a,b)}=\psi(a)-\log b,$$
+
+where $\psi(\cdot)$ is the [Digamma function](https://en.wikipedia.org/wiki/Digamma_function)
+
+## The variational Bayes Approach
+
 
 
 
