@@ -115,10 +115,18 @@ Figure 2: Comparison between prior and posterior distributions. In the right plo
 
 ## Marginal Likelihood
 
-[Back to main page](bayesian_inference.md)
+The last thing we can do in this section is to calculate to marginal likelihood defined by:
+
+$$P(\mathcal{D})=\int L(\mathcal{D}|w,\beta)p(w,\beta) dw d\beta$$
+
+Again this can be done analytically and it is quite common to calculate the log marginal likelihood:
+
+$$\log P(\mathcal{D})=-\frac{N}{2}\log 2\pi + \frac{1}{2}\log\frac{\tau_0}{\tau_n} + a_0\log b_0 - a_n\log b_n + \log\Gamma(a_n) - \log\Gamma(a_0)$$
+
+The marginal likelihood captures in a single number how well our model explains the observations.
 
 [Part 2: Variational Bayesian Approach](BI_VB.md)
 
 [Part 3: Markov Chain Monte Carlo Approach](BI_MCMC.md)
 
-
+[Back to main page](bayesian_inference.md)
