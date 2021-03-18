@@ -123,7 +123,7 @@ Again this can be done analytically and it is quite common to calculate the log 
 
 $$\log P(\mathcal{D})=-\frac{N}{2}\log 2\pi + \frac{1}{2}\log\frac{\tau_0}{\tau_n} + a_0\log b_0 - a_n\log b_n + \log\Gamma(a_n) - \log\Gamma(a_0)$$
 
-The marginal likelihood captures in a single number how well our model explains the observations.
+The marginal likelihood captures in a single number how well our model explains the observations. This number by itself has no meaning, it only becomes interpretable in comparison to other models. 
 
 [Part 2: Variational Bayesian Approach](BI_VB.md)
 
