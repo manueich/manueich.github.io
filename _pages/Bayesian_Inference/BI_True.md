@@ -53,7 +53,7 @@ $$\beta_{ML} = \left[\frac{y^Ty-2y^Tf(x)w_{ML}+f(x)^Tf(x)w_{ML}^2}{N}\right]^{-1
 
 In practice, it is very common to maximise the Log-Likelihood, which makes the surface of the function a bit smoother. ML is a fairly simple approach and can also be solved through numerical optimisation of the likelihood function in more complex models. The disadvantage is that there is no inherent estimation of the uncertainty in the point estimates of unknown parameters. For model comparison, the marginal likelihood can be approximated using measures like [AIC](https://en.wikipedia.org/wiki/Akaike_information_criterion) and [BIC](https://en.wikipedia.org/wiki/Bayesian_information_criterion).
 
-<center><img src="/_pages/Bayesian_Inference/logL.png" width="400" height="300"></center>
+<center><img src="/_pages/Bayesian_Inference/logL.png" width="500" height="330"></center>
 
 Figure 1: Example of the Maximum-Likelihood approach, with the read line indicating the ML point estimate.
 
@@ -91,7 +91,7 @@ $$b_n = b_0+\frac{1}{2}\left(y^Ty+\mu_0^2\tau_0-\mu_n^2\tau_n\right)$$
 
 The details of this derivation can again be found in the [Wikipedia entry](https://en.wikipedia.org/wiki/Bayesian_linear_regression). 
 
-Having calculated the joint posterior density $p(w,\beta||\mathcal{D})$, it can be useful to know the marginal posterior densities over $w$ and $\beta$. For $\beta$ this is very straightforward and we have:
+Having calculated the joint posterior density $p(w,\beta\|\mathcal{D})$, it can be useful to know the marginal posterior densities over $w$ and $\beta$. For $\beta$ this is very straightforward and we have:
 
 $$p(\beta|\mathcal{D})=\int_{-\infty}^{\infty}p(w,\beta|\mathcal{D})dw=\int_{-\infty}^{\infty}\mathcal{N}(w|\mu_n,(\beta \tau_n)^{-1})\mathcal{Ga}(\beta|a_n,b_n)dw=\mathcal{Ga}(\beta|a_n,b_n)$$
 
@@ -105,11 +105,11 @@ $$A=a_n-0.5$$
 
 $$B=\frac{\tau_n}{2}(w-\mu_n)^2+b_n$$
 
-$$C=\sqrt\frac{\tau_n}{2\pi}\frac{{b_{n}}^{a_n}}{\Gamma(a_n)}$$
+$$C=\sqrt\frac{\tau_n}{2\pi}\frac{b_n^{a_n}}{\Gamma(a_n)}$$
 
 An example of the prior and posterior distributions is given in the following Figure.
 
-<center><img src="/_pages/Bayesian_Inference/true_prior_post.png" width="600" height="300"></center>
+<center><img src="/_pages/Bayesian_Inference/true_prior_post.png" width="800" height="400"></center>
 
 Figure 2: Comparison between prior and posterior distributions. In the right plot, the true value is given in black and the posterior mean in given in red. 
 
