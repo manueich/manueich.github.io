@@ -11,7 +11,7 @@ For our simple model, an exact analytical solution to the Bayesian linear regres
 
 ## Recap
 
-During the following calculations, we will be relying heavily on the knowledge of the Normal and Gamma PDFs, so here is a quick recap. The Normal distribution is defined as follows:
+During the following calculations, we will be relying heavily on the knowledge about the Normal and Gamma PDFs, so here is a quick recap. The Normal distribution is defined as follows:
 
 $$\mathcal{N}(w|\mu,\tau^{-1})=\sqrt\frac{\tau}{2\pi}\exp\left[-\frac{\tau}{2}(w-\mu)^2\right]$$
 

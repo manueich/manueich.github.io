@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Tutorial on Approximate Bayesian Inference"
-excerpt: "Tutorial on Approximate Bayesian Inference"
+title: "Tutorial on Approximate Bayesian Inference for Linear Regression"
+excerpt: "Tutorial on Approximate Bayesian Inference for Linear Regression"
 permalink: /bayesian_inference/
 author_profile: false
 ---
@@ -10,7 +10,7 @@ author_profile: false
 
 This tutorial exemplifies the use of approximate Bayesian inference with both a variational Bayesian (VB) and Markov Chain Monte Carlo (MCMC) approach on a very simple linear regression model. It is aimed at people who already have a basic understanding of probability theory including Bayes' rule, probability density functions (especially normal and gamma) and expectations and want to understand the inner workings, advantages and disadvantages of VB and MCMC approaches. 
 
-There are a lot of tutorials on either approaches but I have not come across a tutorial that explains and describes both methods on the same model. I hope the following documents will fill this gap. The accompanying code in MATLAB and Python is also published. The described concepts are mainly taken from and expanded upon [Bishop's "Pattern Recognition and Machine Learning" (2006)](https://www.springer.com/gp/book/9780387310732).    
+There are a lot of tutorials on either approaches but I have not come across a tutorial that explains and describes both methods on the same model. I hope the following documents will fill this gap. I believe that understanding the details of the VB and MCMC approaches in this simple model paves the way towards their application in more complex models. The accompanying code in MATLAB and Python is also published. The described concepts are mainly taken from and expanded upon [Bishop's "Pattern Recognition and Machine Learning" (2006)](https://www.springer.com/gp/book/9780387310732).    
 
 ## Introduction
 
@@ -39,7 +39,17 @@ The function $L(\cdot)$ expresses the likelihood of observing the data given the
 
 $$P(\mathcal{D})=\int L(\mathcal{D}|w,\beta)p(w,\beta) dw d\beta$$
 
-Model (1)-(2) is actually simple enough so so that the posterior distribution and marginal likelihood can be calculated analytically. However, for more complex models this is not the case and we have to resort to approximate inference. For this particular example model, having the analytic solution is very useful as it allows us to compare the 'true' solution with the approximate results we get from VB and MCMC. 
+### Why do we need approximation?
+
+In practice, i.e. when the model is formulated by differential equations, it becomes infeasible to evaluate the posterior distribution. Quoting Bishop (2006) p. 462:
+
+> "In such situations, we need to resort to approximation schemes, and these fall broadly into two classes, according to whether they rely on stochastic or deterministic approximations. Stochastic techniques such as Markov chain Monte Carlo \[...\] have enabled the widespread use of Bayesian methods across many domains. They generally have the property that given infinite computational resource, they can generate exact results, and the approximation arises from the use of a finite amount of processor time. In practice, sampling methods can be computationally
+demanding, often limiting their use to small-scale problems. Also, it can
+be difficult to know whether a sampling scheme is generating independent samples from the required distribution."
+
+> "\[...\] deterministic approximation schemes (such as VB) \[...\] are based on analytical approximations to the posterior distribution, for example by assuming that it factorizes in a particular way or that it has a specific parametric form such as a Gaussian. As such, they can never generate exact results, and so their strengths and weaknesses are complementary to those of sampling methods.
+
+Model (1)-(2) is actually simple enough so so that the posterior distribution and marginal likelihood can be calculated analytically and no approximation is required. For this particular example model, having the analytic solution is very useful as it allows us to compare the 'true' solution with the approximate results we get from VB and MCMC. 
 
 The exact analytic solution is described in [Part 1](BI_True.md).
 
