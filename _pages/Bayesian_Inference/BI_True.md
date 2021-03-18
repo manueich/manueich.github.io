@@ -105,7 +105,7 @@ $$A=a_n-0.5$$
 
 $$B=\frac{\tau_n}{2}(w-\mu_n)^2+b_n$$
 
-$$C=\sqrt\frac{\tau_n}{2\pi}\frac{{b_n}^{a_n}}{\Gamma(a_n)}$$
+$$C=\sqrt\frac{\tau_n}{2\pi}\frac{{b_{n}}^{a_n}}{\Gamma(a_n)}$$
 
 An example of the prior and posterior distributions is given in the following Figure.
 
