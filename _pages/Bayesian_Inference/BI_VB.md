@@ -43,18 +43,17 @@ In the last step, we have pulled out the log marginal likelihood from the expect
 
 $$\underbrace{\mathbb{E}\left[\log p(w,\beta)  + \log L(\mathcal{D}|w,\beta) - \log q(w,\beta)\right]_{q(w,\beta)}}_{\mathcal{F}} = \log P(\mathcal{D}) - D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D}))$$
 
-DKL is restricted to positive values, meaning that if DKL = 0, then fq and fjy;M are
-identical and the free energy F is equal to the log of the model evidence log P(yjM).
-Maximising the free energy with respect to fq is thus equivalent to minimising the
-Kullback-Leibler divergence DKL, therefore simultaneously providing an approximation
-of the true posterior through fq and of the lower bound on the model evidence
-through F.
+Now we can see that the Free Energy can be considered a lower bound on the marginal likelihood, in the sense that if the posterior $p(w,\beta\|\mathcal{D})$ and approximated distributions $q(w,\beta)$ are identical, then $D_{KL}=0$, which in turn leads to $\mathcal{F}=\log P(\mathcal{D})$. We can also see that when maximising the Free Energy with respect to $q$, we are minimising $D_{KL}$. This in turn provides us with an approximation of the true posterior distribution through $q$ and simultaneously an lower bound on the model evidence through the Free Energy.
 
+### Free Energy Maximisation
 
+Maximising the Free Energy (which is a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics))) with respect to $q$ is a problem that can be solved using the [Variational Calculus](https://en.wikipedia.org/wiki/Calculus_of_variations), thereby giving the whole method its name. However, going forward we don't need any specific knowledge on this topic, but generally speaking, variational calculus gives the tools to optimise functionals (a function that takes another function as input). 
 
+Returning to our problem at hand, we need to introduce the fist approximation of the distribution $q$ in order to maximise the Free Energy. Here, we say that the joint distribution of our unknown parameters can be factorised, i.e.
 
+$$q(w,\beta) = q(w)q(\beta)$$
 
-
+This is known as the mean-field approximation and assumes that there is no conditional dependency between the unknown parameters.
 
 
 ... to be continued
