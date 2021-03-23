@@ -72,3 +72,5 @@ $$\mathcal{F}(q(w),q(\beta))$$
 $$\mathcal{F}(q^*(w),q(\beta))$$
 
 $$\mathcal{F}(q^*(w),q^*(\beta))$$
+
+<center><img src="/_pages/Bayesian_Inference/Fmax.png" width="500" height="330"></center>
