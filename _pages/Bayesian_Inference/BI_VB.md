@@ -31,7 +31,7 @@ where $\psi(\cdot)$ is the [Digamma function](https://en.wikipedia.org/wiki/Diga
 
 ## The Variational Bayes Approach
 
-We start by introducing the PDF $q(w,\beta)$ which we will use an approximation to the true posterior distribution $p(w,\beta\|\mathcal{D})$. Next, we calculate the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), between the true and approximated distributions:
+We start by introducing the PDF $q(w,\beta)$ which we will use an approximation to the true posterior distribution $p(w,\beta\|\mathcal{D})$. Next, we calculate the [Kullback-Leibler divergencee](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), between the true and approximated distributions:
 
 $$D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D}))=\int q(w,\beta)\log\frac{q(w,\beta)}{p(w,\beta|\mathcal{D})}dwd\beta$$
 
@@ -47,13 +47,28 @@ Now we can see that the Free Energy can be considered a lower bound on the margi
 
 ### Free Energy Maximisation
 
-Maximising the Free Energy (which is a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics))) with respect to $q$ is a problem that can be solved using the [Variational Calculus](https://en.wikipedia.org/wiki/Calculus_of_variations), thereby giving the whole method its name. However, going forward we don't need any specific knowledge on this topic, but generally speaking, variational calculus gives the tools to optimise functionals (a function that takes another function as input). 
+Maximising the Free Energy (which is a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics))) with respect to $q$ is a problem that can be solved using the [Variational Calculus](https://en.wikipedia.org/wiki/Calculus_of_variations), thereby giving the whole method its name. In short, variational calculus gives the tools to optimise functionals (a function that takes another function as input). 
 
 Returning to our problem at hand, we need to introduce the fist approximation of the distribution $q$ in order to maximise the Free Energy. Here, we say that the joint distribution of our unknown parameters can be factorised, i.e.
 
 $$q(w,\beta) = q(w)q(\beta)$$
 
-This is known as the mean-field approximation and assumes that there is no conditional dependency between the unknown parameters.
+This is known as the mean-field approximation and assumes that there is no conditional dependency between the unknown parameters. The next step is to maximise the Free energy with the individual components of $q$. For that we set
 
+$$\frac{\partial \mathcal{F}}{\partial q(w)}=0$$
+
+$$\frac{\partial \mathcal{F}}{\partial q(\beta)}=0$$
+
+and solve for $q(w)$ and $q{\beta}$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^*(w)$ and $q^*(\beta)$ that maximise the Free energies can be calculated as follows:
+
+$$\log q^*(w) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}$$
+
+$$\log q^*(\beta) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(w)}$$
 
 ... to be continued
+
+$$\mathcal{F}(q(w),q(\beta))$$
+
+$$\mathcal{F}(q^*(w),q(\beta))$$
+
+$$\mathcal{F}(q^*(w),q^*(\beta))$$
