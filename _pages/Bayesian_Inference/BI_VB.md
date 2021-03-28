@@ -65,12 +65,12 @@ $$\log q^*(w) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)
 
 $$\log q^*(\beta) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(w)}$$
 
-... to be continued
-
-$$\mathcal{F}(q(w),q(\beta))$$
-
-$$\mathcal{F}(q^*(w),q(\beta))$$
-
-$$\mathcal{F}(q^*(w),q^*(\beta))$$
+Examining these two equations we can see that they are not independent, i.e. we need $q(\beta)$ to calculate $q^*(w)$ and vice versa. To get around this issue, the VB method employs an iterative maximisation approach, illustrated in the figure below. This means that we initialise both approximated distributions with their respective priors and iteratively update them, always keeping one component constant. After each iteration step, we recalculate the Free Energy. The process is terminated when the change in Free Energy from one step to the next is below some user defined threshold, typically $10^{-3}$ or lower. 
 
 <center><img src="/_pages/Bayesian_Inference/Fmax.png" width="760" height="500"></center>
+
+Figure 1: Iterative maximisation of the Free Energy.
+
+### Update rules
+
+In order to ass
