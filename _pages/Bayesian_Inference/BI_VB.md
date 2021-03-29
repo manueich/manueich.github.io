@@ -43,7 +43,7 @@ In the last step, we have pulled out the log marginal likelihood from the expect
 
 $$\underbrace{\mathbb{E}\left[\log p(w,\beta)  + \log L(\mathcal{D}|w,\beta) - \log q(w,\beta)\right]_{q(w,\beta)}}_{\mathcal{F}} = \log P(\mathcal{D}) - D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D}))$$
 
-Now we can see that the Free Energy can be considered a lower bound on the marginal likelihood, in the sense that if the posterior $p(w,\beta\|\mathcal{D})$ and approximated distributions $q(w,\beta)$ are identical, then $D_{KL}=0$, which in turn leads to $\mathcal{F}=\log P(\mathcal{D})$. We can also see that when maximising the Free Energy with respect to $q$, we are minimising $D_{KL}$. This in turn provides us with an approximation of the true posterior distribution through $q$ and simultaneously an lower bound on the model evidence through the Free Energy.
+Now we can see that the Free Energy can be considered a lower bound on the marginal likelihood, in the sense that if the posterior $p(w,\beta\|\mathcal{D})$ and approximated distribution $q(w,\beta)$ are identical, then $D_{KL}=0$, which in turn leads to $\mathcal{F}=\log P(\mathcal{D})$. Another interpretation of the expression is that maximising the Free Energy with respect to $q$ minimises the Kullback-Leibler divergence $D_{KL}$. As a result, the Free Energy maximisation provides us with an approximation of the true posterior distribution through $q$ and simultaneously an lower bound on the model evidence through the Free Energy. This is one of the main advantages of the VB method.
 
 ### Free Energy Maximisation
 
@@ -59,7 +59,7 @@ $$\frac{\partial \mathcal{F}}{\partial q(w)}=0$$
 
 $$\frac{\partial \mathcal{F}}{\partial q(\beta)}=0$$
 
-and solve for $q(w)$ and $q{\beta}$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^*(w)$ and $q^*(\beta)$ that maximise the Free energies can be calculated as follows:
+and solve for $q(w)$ and $q(\beta)$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^*(w)$ and $q^*(\beta)$ that maximise the Free energies can be calculated as follows:
 
 $$\log q^*(w) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}$$
 
@@ -73,4 +73,19 @@ Figure 1: Iterative maximisation of the Free Energy.
 
 ### Update rules
 
-In order to ass
+The previous calculations have been fairly generic as we have not made any assumptions on the parametric forms of the approximate distributions $q(\beta)$ and $q(w)$. In order to proceed, we will assume that $q(w)$ follows a Normal distribution and $q(\beta)$ follows a Gamma distribution, i.e.:
+
+$$q(w,\beta)=q(w)q(\beta)=\mathcal{N}(w|\mu_n,\tau_n^{-1})\mathcal{Ga}(\beta|a_n,b_n)$$
+
+Additionally it is assumed that the respective prior distributions have the same parametric form, i.e.
+
+$$p(w,\beta)=p(w)p(\beta)=\mathcal{N}(w|\mu_0,\tau_0^{-1})\mathcal{Ga}(\beta|a_0,b_0)$$
+
+With these assumptions, we can see the approximation of prior and posterior in comparison to the "true" distributions, introduced in [Part 1](BI_True.md) expressions (9)-(11) and (12). Together with the Likelihood function, also introduced in [Part 1](BI_True.md) expressions (5) - (6), we can now calculate the updated distributions $q^*(w)$ and $q^*(\beta)$.
+
+To keep the calculation uncluttered, all terms that are not dependent on the unknown parameter of interest will be collect in a $const$ term. Starting with $q^*(w)$ we have:
+
+$$\begin{aligned} \log q^*(w) &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}\\ \end{aligned}$$
+
+
+
