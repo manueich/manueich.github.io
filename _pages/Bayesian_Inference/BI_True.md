@@ -15,13 +15,17 @@ During the following calculations, we will be relying heavily on the knowledge a
 
 $$\mathcal{N}(w|\mu,\tau^{-1})=\sqrt\frac{\tau}{2\pi}\exp\left[-\frac{\tau}{2}(w-\mu)^2\right]$$
 
-The mean is $\mu$ and the precision (inverse of the variance) is $\tau$.
+The mean is $\mu$ and the precision (inverse of the variance) is $\tau$. Its natural logarithm is as follows:
+
+$$\log \mathcal{N}(w|\mu,\tau^{-1})=\dfrac{1}{2} \log\dfrac{\tau}{2\pi}+\left[-\frac{\tau}{2}(w-\mu)^2\right]$$
 
 For the Gamma distribution we have:
 
-$$\mathcal{Ga}(\beta|a,b)=\frac{b^a}{\Gamma(a)}\beta^{a-1}\exp(-\beta b),$$
+$$\log \mathcal{Ga}(\beta|a,b)=\frac{b^a}{\Gamma(a)}\beta^{a-1}\exp(-\beta b),$$
 
-with shape and rate parameters $a$ and $b$, respectively. The mean of the Gamma PDF is $a/b$ and the variance is $a/b^2$.
+with shape and rate parameters $a$ and $b$, respectively. The mean of the Gamma PDF is $a/b$ and the variance is $a/b^2$. Its natural logarithm is as follows:
+
+$$\mathcal{Ga}(\beta|a,b)=a\log b - \log \Gamma(a) + (a-1)\log \beta-\beta b$$
 
 ## The Likelihood function
 

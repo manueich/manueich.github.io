@@ -83,9 +83,29 @@ $$p(w,\beta)=p(w)p(\beta)=\mathcal{N}(w|\mu_0,\tau_0^{-1})\mathcal{Ga}(\beta|a_0
 
 With these assumptions, we can see the approximation of prior and posterior in comparison to the "true" distributions, introduced in [Part 1](BI_True.md) expressions (9)-(11) and (12). Together with the Likelihood function, also introduced in [Part 1](BI_True.md) expressions (5) - (6), we can now calculate the updated distributions $q^*(w)$ and $q^*(\beta)$.
 
-To keep the calculation uncluttered, all terms that are not dependent on the unknown parameter of interest will be collect in a $const$ term. Starting with $q^*(w)$ we have:
+#### Updating $q(w)$
 
-$$\begin{aligned} \log q^*(w) &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}\\ \end{aligned}$$
+To keep the calculation uncluttered, all terms that are not dependent on the unknown parameter of interest will be collected in a $const$ term. Starting with $q^*(w)$ we have:
 
+$$\begin{aligned} \log q^*(w) &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}\\ &=\mathbb{E}[\log L(\mathcal{D}|w,\beta)]_{q(\beta)} + \log p(w) + const\\ \end{aligned}$$
 
+Now using the previous definitions of the log-Likelihood and the log Normal distribution from [Part 1](BI_True.md) we have:
+
+$$\log q^*(w) = -\frac{\mathbb{E}[\beta]_{q(\beta)}}{2} [y^Ty-2wy^Tf(x)+f(x)^Tf(x)w^2] - \frac{\tau_0}{2}[w^2+2w\mu_0-\mu_0^2] + const$$
+
+Here, we made use of the fact that we can pull all terms that are not dependent on $\beta$ out from the expectation. Next, we use a technique called completing the square to formulate the expression in terms of a binomial of $w$ so we can extract the hyperparameters of he resulting Normal distribution. For that we collect and sort all terms dependent of $w$ while again summarizing all independent terms in $const$:
+
+$$\log q^*(w) = -\frac{1}{2} [w^2(\frac{a_n}{b_n}f(x)^Tf(x)+\tau_0)- 2w(\frac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0)] + const$$
+
+Now we can formulate the binomial:
+
+$$\log q^*(w) = -\frac{\dfrac{a_n}{b_n}f(x)^Tf(x)+\tau_0}{2} \left[w-\frac{\dfrac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0}{\dfrac{a_n}{b_n}f(x)^Tf(x)+\tau_0}\right]^2 + const$$
+
+This expression now is in the form of a log Normal distribution and allows us to extract the hyperparameters of the updated Normal distribution as:
+
+$$\tau_n=\dfrac{a_n}{b_n}f(x)^Tf(x)+\tau_0$$
+
+$$\mu_n=\dfrac{\dfrac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0}{\tau_n}$$
+
+#### Updating $q(\beta)$
 
