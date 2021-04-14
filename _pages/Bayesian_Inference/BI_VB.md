@@ -97,7 +97,7 @@ Here, we made use of the fact that we can pull all terms that are not dependent 
 
 $$\log q^*(w) = -\frac{1}{2} [w^2(\frac{a_n}{b_n}f(x)^Tf(x)+\tau_0)- 2w(\frac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0)] + const$$
 
-Now we can formulate the binomial:
+Furthermore we have used the expressions from the beginning of this section. Now we can formulate the binomial:
 
 $$\log q^*(w) = -\frac{\dfrac{a_n}{b_n}f(x)^Tf(x)+\tau_0}{2} \left[w-\frac{\dfrac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0}{\dfrac{a_n}{b_n}f(x)^Tf(x)+\tau_0}\right]^2 + const$$
 
@@ -108,4 +108,78 @@ $$\tau_n=\dfrac{a_n}{b_n}f(x)^Tf(x)+\tau_0$$
 $$\mu_n=\dfrac{\dfrac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0}{\tau_n}$$
 
 #### Updating $q(\beta)$
+
+The procedure to derive the update rules for $q(\beta)$ is very similar as before. The main difference is that we want to bring the expression into the form of a log Gamma distribution, which allows us to again extract the updated hyperparameters of the $q(\beta)$. For that we have
+
+$$\begin{aligned} \log q^*(\beta) &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(w)}\\ &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)]_{q(w)} +\log p(w) + const\\ &= \frac{N}{2} \log \beta - \frac{\beta}{2}[-2y^Tf(x)\mathbb{E}[w]_{q(w)}+f(x)^Tf(x)\mathbb{E}[w^2]_{q(w)} + y^Ty] + (a_0-1)\log \beta -b_0 \beta + const\\ &= \log \beta [a_0-1+\frac{N}{2}] - \beta[b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_0})+y^Ty]]+const \end{aligned}$$
+
+Here we have again made use of the expectations with respect to the Normal distribution at the beginning of this part. Now we can extract the hyperparameters of the updated distribution $q(\beta)$:
+
+$$a_n = a_0 + \frac{N}{2}$$
+
+$$b_n = b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_0})+y^Ty]$$
+
+### Free Energy Decomposition
+
+The last and undoubtedly most complicated thing is to derive the expression for the Free Energy. There are a lot of expression to formulate but it is essentially just more of the same we have done for the update rules. From expression (7), we have the following expression for the Free Energy. 
+
+$$\mathcal{F} = \mathbb{E}\left[\log p(w,\beta)  + \log L(\mathcal{D}|w,\beta) - \log q(w,\beta)\right]_{q(w,\beta)},$$
+
+which can be expanded as follows (using the previously introduced mean-field approximation):
+
+$$\mathcal{F} = \mathbb{E}\left[\log L(\mathcal{D}|w,\beta) + \log p(w) + \log p(\beta)  - \log q(w) - \log(\beta)\right]_{q(w,\beta)},$$
+
+This gives us four terms we can evaluate separately, which is also known as the Free energy decomposition. Starting with the log-likelihood, we have:
+
+$$\begin{aligned} \mathbb{E}[\log L(\mathcal{D}|w,\beta)]_{q(w,\beta)} &= \frac{N}{2}\mathbb{E}\left[\log \frac{\beta}{2\pi}\right]_{q(\beta)} - \frac{1}{2} \mathbb{E}[\beta]_{q(\beta)} \mathbb{E}[y^Ty - 2y^Tf(x)w + f(x)^Tf(x) w^2]_{q(w)}\\ &= \frac{N}{2}\left[\psi(a_n) - \log 2\pi b_n \right] - \frac{a_n}{2b_n}\left[ y^Ty - 2y^Tf(x)\mu_n + f(x)^Tf(x) \left(  \mu_n^2 + \frac{1}{\tau_n} \right) \right] \end{aligned}$$
+
+Next, the prior distribution $p(w)$:
+
+$$\begin{aligned} \mathbb{E}[\log p(w)]_{q(w)} &= \frac{1}{2} \log \frac{\tau_0}{2\pi} - \frac{\tau_0}{2}\mathbb{E}\left[w^2-2w\mu_0+\mu_0^2\right]_{q(w)}\\ &= \frac{1}{2} \log \frac{\tau_0}{2\pi} - \frac{\tau_0}{2} \left[ (\mu_n^2+\frac{1}{\tau_n}) - 2\mu_0\mu_n + \mu_0^2 \right] \\\end{aligned}$$
+
+Next, the prior distribution $p(\beta)$:
+
+$$\begin{aligned} \mathbb{E}[\log p(\beta)]_{q(\beta)} &= a_0 \log b_0 - \log \Gamma(a_0) + (a_0-1)\mathbb{E}[\log \beta]_{q(\beta)} - b_0\mathbb{E}[\beta]_{q(\beta)}\\ &= a_0 \log b_0 - \log \Gamma(a_0) + (a_0-1)\left[ \psi(a_n) - \log b_n \right] - b_0 \frac{a_n}{b_n}\\ \end{aligned}$$
+
+Next, the approximated posterior distribution $q(w)$:
+
+$$\begin{aligned} \mathbb{E}[\log q(w)]_{q(w)} &= \frac{1}{2} \log \frac{\tau_n}{2\pi} - \frac{\tau_n}{2}\mathbb{E}\left[w^2-2w\mu_n+\mu_n^2\right]_{q(w)}\\ &= \frac{1}{2} \log \frac{\tau_n}{2\pi} - \frac{\tau_n}{2} \left[ (\mu_n^2+\frac{1}{\tau_n}) - 2\mu_n^2 + \mu_n^2 \right] \\ &= \frac{1}{2} \log \frac{\tau_n}{2\pi} - \frac{1}{2}\end{aligned}$$
+
+Next, the approximated posterior distribution $q(\beta)$:
+
+$$\begin{aligned} \mathbb{E}[\log q(\beta)]_{q(\beta)} &= a_n \log b_n - \log \Gamma(a_n) + (a_n-1)\mathbb{E}[\log \beta]_{q(\beta)} - b_n\mathbb{E}[\beta]_{q(\beta)}\\ &= a_n \log b_n - \log \Gamma(a_n) + (a_n-1)\left[ \psi(a_n) - \log b_n \right] - a_n\\ \end{aligned}$$
+
+This finishes the Free Energy decomposition.
+
+### Implementation of the Algorithm
+
+Using pseudocode, the VB algorithm for parameter estimation and Free Energy calculation can be implemented as follows:
+
+```
+# Calculate Prior Free Energy
+F(1) = Calculate Free Energy (a_0, b_0, mu_0, tau_0)
+
+an = a0
+bn = b0
+
+mun = mu0
+taun = tau0
+
+k=2
+dFtol = 1e-3
+
+# Free Energy maximisation loop
+while dF > dFtol
+    # Update q(beta)
+    Calculate a_n, b_n
+
+    # Update q(w)
+    Calculate mu_n, tau_n
+
+    # Calculate Free Energy
+    F(k) = Calculate Free Energy (a_n, b_n, mu_n, tau_n)
+
+    dF = F(k) - F(k-1)
+end
+```
 
