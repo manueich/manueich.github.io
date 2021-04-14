@@ -145,11 +145,11 @@ Next, the approximated posterior distribution $q(w)$:
 
 $$\begin{aligned} \mathbb{E}[\log q(w)]_{q(w)} &= \frac{1}{2} \log \frac{\tau_n}{2\pi} - \frac{\tau_n}{2}\mathbb{E}\left[w^2-2w\mu_n+\mu_n^2\right]_{q(w)}\\ &= \frac{1}{2} \log \frac{\tau_n}{2\pi} - \frac{\tau_n}{2} \left[ (\mu_n^2+\frac{1}{\tau_n}) - 2\mu_n^2 + \mu_n^2 \right] \\ &= \frac{1}{2} \log \frac{\tau_n}{2\pi} - \frac{1}{2}\end{aligned}$$
 
-Next, the approximated posterior distribution $q(\beta)$:
+Lastly, the approximated posterior distribution $q(\beta)$:
 
 $$\begin{aligned} \mathbb{E}[\log q(\beta)]_{q(\beta)} &= a_n \log b_n - \log \Gamma(a_n) + (a_n-1)\mathbb{E}[\log \beta]_{q(\beta)} - b_n\mathbb{E}[\beta]_{q(\beta)}\\ &= a_n \log b_n - \log \Gamma(a_n) + (a_n-1)\left[ \psi(a_n) - \log b_n \right] - a_n\\ \end{aligned}$$
 
-This finishes the Free Energy decomposition.
+This finishes the Free Energy decomposition. Fit vs compelxity
 
 ### Implementation of the Algorithm
 
