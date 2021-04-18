@@ -73,7 +73,7 @@ $$p(w|\beta)=\mathcal{N}(w|\mu_0,(\beta \tau_0)^{-1})$$
 
 $$p(\beta)=\mathcal{Ga}(\beta|a_0,b_0)$$
 
-In words, $w$ follows a Normal distribution with mean of $\mu_0$ and a variance conditional on the value of $\tau_0$ and $\beta$, which itself follows a Gamma distribution with shape $a_0$ and rate $b_0$. The exact derivation of this relationship can be found in the [Wikipedia entry](https://en.wikipedia.org/wiki/Bayesian_linear_regression).
+In words, $w$ follows a Normal distribution with mean of $\mu_0$ and a variance conditional on the value of $\tau_0$ and $\beta$, where $\beta$ itself is an unknown parameter that follows a Gamma distribution with shape $a_0$ and rate $b_0$. The exact derivation of this relationship can be found in the [Wikipedia entry](https://en.wikipedia.org/wiki/Bayesian_linear_regression).
 
 ## The Posterior Distribution
 

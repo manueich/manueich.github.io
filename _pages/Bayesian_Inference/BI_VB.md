@@ -7,17 +7,21 @@ author_profile: false
 
 In variational Bayesian (VB) analysis, the posterior distribution over unknown parameters is approximated by assuming it has certain properties such as factorising in a specific way or taking a specific parametric form. Alongside the approximation of the posterior, the VB method also provides an estimation of the marginal likelihood. 
 
+[Back to main page](bayesian_inference.md)
+
+[Back to Part 1](BI_true.md)
+
 ## Recap
 
 Before we can begin, we need establish some foundations with respect to the calculations of [expectations](https://en.wikipedia.org/wiki/Expected_value). The expectation of a function $f(x)$ with respect to some PDF $p(x)$ is expressed as follows:
 
 $$\mathbb{E}[f(x)]_{p(x)}=\int f(x)p(x)dx$$
 
-In words, the expectation gives us the expected value of $f(x)$ if we assume that the random variable $x$ follows the PDF $p(x)$. A simple example is the expectation of a Normal distribution:
+In words, the expectation gives us the expected value of $f(x)$ if we assume that the random variable $x$ follows the PDF $p(x)$. A simple example is the expectation of random variable $x$ that follows a Normal distribution:
 
 $$\mathbb{E}[x]_{\mathcal{N}(x|\mu,\tau^{-1})}=\int x\mathcal{N}(x|\mu,\tau^{-1})dx=\mu$$
 
-In words, we expect a random variable $x$ to take the value of the mean $\mu$ if it follows a normal distribution. As we have seen before, the expectation of a Gamma distribution is:
+In words, we expect a random variable $x$ to take the value of the mean $\mu$ if $x$ follows a Normal distribution. As we have seen before, the expectation of a Gamma distribution is:
 
 $$\mathbb{E}[x]_{\mathcal{Ga}(x|a,b)}=\int x\mathcal{Ga}(x|a,b)dx=\frac{a}{b}$$
 
@@ -31,11 +35,11 @@ where $\psi(\cdot)$ is the [Digamma function](https://en.wikipedia.org/wiki/Diga
 
 ## The Variational Bayes Approach
 
-We start by introducing the PDF $q(w,\beta)$ which we will use an approximation to the true posterior distribution $p(w,\beta\|\mathcal{D})$. Next, we calculate the [Kullback-Leibler divergencee](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), between the true and approximated distributions:
+We start by introducing the PDF $q(w,\beta)$ which we will use an approximation to the true posterior distribution $p(w,\beta\|\mathcal{D})$. Next, we calculate the [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence), between the true and approximated distributions:
 
 $$D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D}))=\int q(w,\beta)\log\frac{q(w,\beta)}{p(w,\beta|\mathcal{D})}dwd\beta$$
 
-The Kullback-Leibler divergence has been introduced in the context of information theory. However, for its use in the VB approach, there are three properties we need to know: (1) it is always positive, (2) it provides a measure for the similarity between two distributions and (3) it is zero if they are identical. Substituting Bayes' rule for the posterior distribution we get:
+The Kullback-Leibler divergence has been introduced in the context of information theory. However, for its use in the VB approach, it has three properties we care about: (1) it is always positive, (2) it is zero if the two distributions are identical and (3) it provides a measure for the similarity between two distributions. Substituting Bayes' rule for the posterior distribution we get:
 
 $$\begin{aligned} D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D})) &=\int q(w,\beta)\log\frac{q(w,\beta)P(\mathcal{D})}{L(\mathcal{D}|w,\beta)p(w,\beta)}dwd\beta\\ &=\int q(w,\beta) \left[\log q(w,\beta) + \log P(\mathcal{D}) - \log L(\mathcal{D}|w,\beta) - \log p(w,\beta)\right]dwd\beta\\ &= \mathbb{E}\left[\log q(w,\beta) + \log P(\mathcal{D}) - \log L(\mathcal{D}|w,\beta) - \log p(w,\beta)\right]_{q(w,\beta)}\\ &= \mathbb{E}\left[\log q(w,\beta) - \log L(\mathcal{D}|w,\beta) - \log p(w,\beta)\right]_{q(w,\beta)} + \log P(\mathcal{D})\\ \end{aligned}$$
 
@@ -47,7 +51,7 @@ Now we can see that the Free Energy can be considered a lower bound on the margi
 
 ### Free Energy Maximisation
 
-Maximising the Free Energy (which is a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics))) with respect to $q$ is a problem that can be solved using the [Variational Calculus](https://en.wikipedia.org/wiki/Calculus_of_variations), thereby giving the whole method its name. In short, variational calculus gives the tools to optimise functionals (a function that takes another function as input). 
+Maximising the Free Energy (which is a [functional](https://en.wikipedia.org/wiki/Functional_(mathematics))) with respect to $q$ is a problem that can be solved using the [Variational Calculus](https://en.wikipedia.org/wiki/Calculus_of_variations), thereby giving the whole method its name. In short, variational calculus gives the tools to optimise functionals (a function that takes another function as input) with respect to some function. 
 
 Returning to our problem at hand, we need to introduce the fist approximation of the distribution $q$ in order to maximise the Free Energy. Here, we say that the joint distribution of our unknown parameters can be factorised, i.e.
 
@@ -59,7 +63,7 @@ $$\frac{\partial \mathcal{F}}{\partial q(w)}=0$$
 
 $$\frac{\partial \mathcal{F}}{\partial q(\beta)}=0$$
 
-and solve for $q(w)$ and $q(\beta)$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^*(w)$ and $q^*(\beta)$ that maximise the Free energies can be calculated as follows:
+and solve for $q(w)$ and $q(\beta)$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^*(w)$ and $q^*(\beta)$ that maximise the Free energy can be calculated as follows:
 
 $$\log q^*(w) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}$$
 
@@ -121,7 +125,7 @@ $$b_n = b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_0})+y^
 
 ### Free Energy Decomposition
 
-The last and undoubtedly most complicated thing is to derive the expression for the Free Energy. There are a lot of expression to formulate but it is essentially just more of the same we have done for the update rules. From expression (7), we have the following expression for the Free Energy. 
+The last and undoubtedly most complicated thing is to derive the expression for the Free Energy. There are a lot of expressions to formulate but it is essentially just more of the same we have done for the update rules. From expression (7), we have the following expression for the Free Energy. 
 
 $$\mathcal{F} = \mathbb{E}\left[\log p(w,\beta)  + \log L(\mathcal{D}|w,\beta) - \log q(w,\beta)\right]_{q(w,\beta)},$$
 
@@ -129,7 +133,7 @@ which can be expanded as follows (using the previously introduced mean-field app
 
 $$\mathcal{F} = \mathbb{E}\left[\log L(\mathcal{D}|w,\beta) + \log p(w) + \log p(\beta)  - \log q(w) - \log(\beta)\right]_{q(w,\beta)},$$
 
-This gives us four terms we can evaluate separately, which is also known as the Free energy decomposition. Starting with the log-likelihood, we have:
+This gives us five terms we can evaluate separately, which is also known as the Free energy decomposition. Starting with the log-likelihood, we have:
 
 $$\begin{aligned} \mathbb{E}[\log L(\mathcal{D}|w,\beta)]_{q(w,\beta)} &= \frac{N}{2}\mathbb{E}\left[\log \frac{\beta}{2\pi}\right]_{q(\beta)} - \frac{1}{2} \mathbb{E}[\beta]_{q(\beta)} \mathbb{E}[y^Ty - 2y^Tf(x)w + f(x)^Tf(x) w^2]_{q(w)}\\ &= \frac{N}{2}\left[\psi(a_n) - \log 2\pi b_n \right] - \frac{a_n}{2b_n}\left[ y^Ty - 2y^Tf(x)\mu_n + f(x)^Tf(x) \left(  \mu_n^2 + \frac{1}{\tau_n} \right) \right] \end{aligned}$$
 
@@ -157,7 +161,7 @@ Using pseudocode, the VB algorithm for parameter estimation and Free Energy calc
 
 ```
 # Calculate Prior Free Energy
-F(1) = Calculate Free Energy (a_0, b_0, mu_0, tau_0)
+F(1) = Calculate Free Energy (a0, b0, mu0, tau0)
 
 an = a0
 bn = b0
@@ -169,17 +173,15 @@ k=2
 dFtol = 1e-3
 
 # Free Energy maximisation loop
-while dF > dFtol
-    # Update q(beta)
-    Calculate a_n, b_n
-
-    # Update q(w)
-    Calculate mu_n, tau_n
+while dF > dFtol    
+    Calculate an, bn        # Update q(beta)    
+    Calculate mun, taun     # Update q(w)
 
     # Calculate Free Energy
-    F(k) = Calculate Free Energy (a_n, b_n, mu_n, tau_n)
+    F(k) = Calculate Free Energy (an, bn, mun, taun)
 
     dF = F(k) - F(k-1)
+    k=k+1
 end
 ```
 
