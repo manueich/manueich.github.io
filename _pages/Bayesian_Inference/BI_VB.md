@@ -185,3 +185,15 @@ while dF > dFtol
 end
 ```
 
+## Example results
+
+Coming back to our example model we get the following results.
+
+<center><img src="/_pages/Bayesian_Inference/VB_prior_post.png" width="800" height="400"></center>
+
+We can see that the prior distributions differ quite significantly as a results of the mean-field approximation. However, the posterior results are very similar, showing the utility of the approximation. The iterative maximisation of the Free Energy and approximation to the true log marginal likelihood is shown in the following figure.
+
+<center><img src="/_pages/Bayesian_Inference/F_max.png" width="400" height="400"></center>
+
+
+

@@ -47,7 +47,7 @@ In practice, i.e. when the model is formulated by differential equations, it bec
 demanding, often limiting their use to small-scale problems. Also, it can
 be difficult to know whether a sampling scheme is generating independent samples from the required distribution."
 
-> "\[...\] deterministic approximation schemes (such as VB) \[...\] are based on analytical approximations to the posterior distribution, for example by assuming that it factorizes in a particular way or that it has a specific parametric form such as a Gaussian. As such, they can never generate exact results, and so their strengths and weaknesses are complementary to those of sampling methods.
+> "\[...\] deterministic approximation schemes \[such as VB\] \[...\] are based on analytical approximations to the posterior distribution, for example by assuming that it factorizes in a particular way or that it has a specific parametric form such as a Gaussian. As such, they can never generate exact results, and so their strengths and weaknesses are complementary to those of sampling methods.
 
 Model (1)-(2) is actually simple enough so so that the posterior distribution and marginal likelihood can be calculated analytically and no approximation is required. For this particular example model, having the analytic solution is very useful as it allows us to compare the 'true' solution with the approximate results we get from VB and MCMC. 
 
