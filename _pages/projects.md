@@ -8,7 +8,7 @@ author_profile: true
 
 VBA-OMM
 ------
-Identification of the Oral Minimal Model of glucose dynamics from non-fasting conditions using Variational Bayesian Analysis in MATALB and Python. The software package was published as part of a recent article in the journal *Computer Methods and Programs in Biomedicine* (see Publications) and can be freely accessed using the following [link](https://github.com/manueich/VBA-OMM) 
+Identification of the Oral Minimal Model of glucose dynamics from non-fasting conditions using Variational Bayesian Analysis in MATLAB and Python. The software package was published as part of a recent article in the journal *Computer Methods and Programs in Biomedicine* (see Publications) and can be freely accessed using the following [link](https://github.com/manueich/VBA-OMM) 
 
 <b />
 
