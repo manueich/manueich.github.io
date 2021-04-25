@@ -11,19 +11,20 @@ redirect_from:
 
 Education
 ------
-* Ph.D. in Engnieering, 2020  
+* Ph.D. in Engineering, 2020  
   University of Warwick, School of Engineering, Biological and Biomedical Systems Laboratory  
-  Thesis: "Mathematiccal modelling of glucose dynamics in normal and impaired glucose tolerance"
-* M.Eng. in Medical Engnieering, 2015  
+  Thesis: "Mathematical modelling of glucose dynamics in normal and impaired glucose tolerance"
+* M.Eng. in Medical Engineering, 2015  
   University of Applied Sciences Ulm     
   Dissertation: "Acquisition and analysis of body sound for the ambulatory diagnosis of sleep-related breathing disorders"
-* B.Sc. in Medical Engnieering, 2013  
+* B.Sc. in Medical Engineering, 2013  
   University of Applied Sciences Furtwangen  
   Dissertation: "Design and construction of a device for the fatigue testing of coronary stents"
 
 Experience
 ------
-* 2010- 2020: **Teaching support** at the Universities of Applied Sciences Furtwangen and Ulm as well as the University of Warwick through project student supervision and demonstration in various subjects including mathematics, electronics, computer science, mechanics, robotics and mathematical modelling. 
+* since 2021: **Junior Scientist** at the Institute for Diabetes-Technology at the University of Ulm, Germany
+* 2010 - 2020: **Teaching support** at the Universities of Applied Sciences Furtwangen and Ulm as well as the University of Warwick through project student supervision and demonstration in various subjects including mathematics, electronics, computer science, mechanics, robotics and mathematical modelling. 
 * 2017 - 2019: **Peer-review** in the scientific journals *Scientific Reports*, *Mathematical Biosciences and Engineering* and *Advances in Differential Equations*
 * 2015 - 2016: **Academic employee** at the University of Applied Sciences Ulm, developing hardware and signal processing methods for the detection of sleep apnea in breath sound recordings and implementing a clinical study to examine the efficacy of an ambulatory sleep monitoring system.
 * 2013: **Research assistant** at the Natural and Medical Sciences Institute at the University of Tübingen, developing a fatigue a testing apparatus for coronary stents and fixtures for adhesive bond testing.

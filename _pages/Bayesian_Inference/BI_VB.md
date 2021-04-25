@@ -153,7 +153,7 @@ Lastly, the approximated posterior distribution $q(\beta)$:
 
 $$\begin{aligned} \mathbb{E}[\log q(\beta)]_{q(\beta)} &= a_n \log b_n - \log \Gamma(a_n) + (a_n-1)\mathbb{E}[\log \beta]_{q(\beta)} - b_n\mathbb{E}[\beta]_{q(\beta)}\\ &= a_n \log b_n - \log \Gamma(a_n) + (a_n-1)\left[ \psi(a_n) - \log b_n \right] - a_n\\ \end{aligned}$$
 
-This finishes the Free Energy decomposition. Fit vs compelxity
+This finishes the Free Energy decomposition.
 
 ### Implementation of the Algorithm
 
