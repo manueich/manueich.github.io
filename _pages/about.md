@@ -12,7 +12,7 @@ I am a trained biomedical engineer with a Ph.D. in the field of mathematical mod
 * Statistical inference and Bayesian model identification in particular variational Bayesian analysis
 * Scientific computing and programming in MATLAB and Python
 * Physiology of glucose metabolism and diabetes
-* Various aspects of Diabetes Technology including insulin pumps, continous glucose monitoring and automated insulin delivery systems
+* Various aspects of Diabetes Technology including insulin pumps, continuous glucose monitoring and automated insulin delivery systems
 * Design and implementation of experimental and clinical studies on human subjects
 * Collection, processing and analysis of sound signals
 
