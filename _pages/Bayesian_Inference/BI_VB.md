@@ -39,7 +39,7 @@ We start by introducing the PDF $q(w,\beta)$ which we will use an approximation 
 
 $$D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D}))=\int q(w,\beta)\log\frac{q(w,\beta)}{p(w,\beta|\mathcal{D})}dwd\beta$$
 
-The Kullback-Leibler divergence has been introduced in the context of information theory. However, for its use in the VB approach, it has three properties we care about: (1) it is always positive, (2) it is zero if the two distributions are identical and (3) it provides a measure for the similarity between two distributions. Substituting Bayes' rule for the posterior distribution we get:
+The Kullback-Leibler divergence has been introduced in the context of information theory. However, for its use in the VB approach, it has three properties we care about: (1) it is never negative, (2) it is zero if the two distributions are identical and (3) it provides a measure for the similarity between two distributions. Substituting Bayes' rule for the posterior distribution we get:
 
 $$\begin{aligned} D_{KL}(q(w,\beta)||p(w,\beta|\mathcal{D})) &=\int q(w,\beta)\log\frac{q(w,\beta)P(\mathcal{D})}{L(\mathcal{D}|w,\beta)p(w,\beta)}dwd\beta\\ &=\int q(w,\beta) \left[\log q(w,\beta) + \log P(\mathcal{D}) - \log L(\mathcal{D}|w,\beta) - \log p(w,\beta)\right]dwd\beta\\ &= \mathbb{E}\left[\log q(w,\beta) + \log P(\mathcal{D}) - \log L(\mathcal{D}|w,\beta) - \log p(w,\beta)\right]_{q(w,\beta)}\\ &= \mathbb{E}\left[\log q(w,\beta) - \log L(\mathcal{D}|w,\beta) - \log p(w,\beta)\right]_{q(w,\beta)} + \log P(\mathcal{D})\\ \end{aligned}$$
 
@@ -63,7 +63,7 @@ $$\frac{\partial \mathcal{F}}{\partial q(w)}=0$$
 
 $$\frac{\partial \mathcal{F}}{\partial q(\beta)}=0$$
 
-and solve for $q(w)$ and $q(\beta)$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^*(w)$ and $q^*(\beta)$ that maximise the Free energy can be calculated as follows:
+and solve for $q(w)$ and $q(\beta)$, respectively. This solution is fairly complex and we advise the curious reader to this [link](https://bjlkeng.github.io/posts/variational-bayes-and-the-mean-field-approximation/), where the steps for the general case are explained. However, an understanding of these steps is not required to follow the rest of this tutorial, or indeed the VB approach, so we will just show the solution. The two densities $q^{*}(w)$ and $q^{*}(\beta)$ that maximise the Free energy can be calculated as follows:
 
 $$\log q^*(w) = \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(\beta)}$$
 
