@@ -7,6 +7,8 @@ author_profile: true
 
 Glucose Dynamics Modelling
 ------
+**M. Eichenlaub**, N. Khovanova, M. Gannon, F. Nuttall, J. Hattersley (2021):  "A Glucose-Only Model to Extract Physiological Information from Postprandial Glucose Profiles in Subjects with Normal Glucose Tolerance". In: Journal of Diabetes Science and Technology. July 2021 \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211026978#_i22)\]
+
 **M. Eichenlaub**, J. Hattersley, M. Gannon, F. Nuttall, N. Khovanova (2021):  "Bayesian identification of the oral minimal model of glucose dynamics from non-fasting conditions using a new function of glucose appearance". In: Computer Methods and Programs in Biomedicine, 200. \[[Link](https://www.sciencedirect.com/science/article/pii/S0169260720317442)\]
 
 **M. Eichenlaub**, J. Hattersley, N. Khovanova (2020):  "Modelling of Glucose Dynamics and Estimation of Insulin Sensitivity from Glucose Data Only". In: 2019 Diabetes Technology Meeting Abstracts, Journal of Diabetes Science and Technology, 14 (2). \[[PDF](http://manueich.github.io/files/pubs/Glucose_DTM19.pdf)\]
