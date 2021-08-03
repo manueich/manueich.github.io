@@ -57,7 +57,7 @@ $$\beta_{ML} = \left[\frac{y^Ty-2y^Tf(x)w_{ML}+f(x)^Tf(x)w_{ML}^2}{N}\right]^{-1
 
 In practice, it is very common to maximise the Log-Likelihood, which makes the surface of the function a bit smoother. ML is a fairly simple approach and can also be solved through numerical optimisation of the likelihood function in more complex models. The disadvantage is that there is no inherent estimation of the uncertainty in the point estimates of unknown parameters. For model comparison, the marginal likelihood can be approximated using measures like [AIC](https://en.wikipedia.org/wiki/Akaike_information_criterion) and [BIC](https://en.wikipedia.org/wiki/Bayesian_information_criterion).
 
-<center><img src="/_pages/Bayesian_Inference/max_LL.png" width="500" height="330"></center>
+<center><img src="/_pages/Bayesian_Inference/max_LL.png" width="600" height="400"></center>
 
 Figure 1: Example of the Maximum-Likelihood approach, with the read line indicating the ML point estimate.
 
