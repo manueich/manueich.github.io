@@ -30,4 +30,6 @@ C. Kalkbrenner, R. Brucher, T. Kesztyüs, **M. Eichenlaub**, W. Rottbauer, D. Sc
 
 Miscellaneous
 ------
+**M. Eichenlaub**, M.P. Saccomani, J. Hattersley, N. Khovanova (2021): "Comment on "Minimal and Maximal Models to Quantitate Glucose Metabolism: Tools to Measure, to Simulate and to Run in Silico Clinical Trials"", Journal of Diabetes Science and Technology. October 2021, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211053884)\]
+
 **M. Eichenlaub** (2021): "On the relationship between a Gamma distributed precision parameter and the associated standard deviation in the context of Bayesian parameter inference", arXiv:2101.06289, \[[Link](https://arxiv.org/abs/2101.06289)\]
