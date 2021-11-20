@@ -31,6 +31,7 @@ Experience
 
 Awards and Grants
 ------
+* 2021: Travel scholarship from the German Diabetes Soceity to attend the annual fall conference (450 EUR)
 * 2016 - 2019: Doctoral scholarship funded by the School of Engineering at the University of Warwick and the University Hospitals Coventry and Warwickshire NHS Trust (GBP 58,000).
 * 2013: Award for graduating at top of class (Rank 1/34) at the University of Applied Sciences Furtwangen from the Dr. Winkler foundation for the promotion of young talents (1,250 EUR).
 * 2011 - 2013: Undergraduate scholarship from the University of Applied Sciences Furtwangen due to outstanding performances in the first year of undergraduate studies (2,500 EUR).
