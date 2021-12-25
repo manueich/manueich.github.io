@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 I am a trained biomedical engineer with a Ph.D. in the field of mathematical modelling of metabolic processes. My core interest lies in the collection and analysis of data, as well as the development of mathematical models for the benefit of society. In particular my interest lies in the field of endocrinology and biomedicine in general. I have extensive skills and expertise in the following areas:
+* Various aspects of diabetes technology including insulin pumps, continuous glucose monitoring, blood glucose monitoring systems and automated insulin delivery systems
+* Physiology of glucose metabolism and diabetes mellitus
+* Scientific computing and programming in MATLAB, Python and VBA
 * Mathematical modelling of human blood glucose dynamics through nonlinear stochastic and deterministic differential equations
 * Statistical inference and Bayesian model identification in particular variational Bayesian analysis
-* Scientific computing and programming in MATLAB and Python
-* Physiology of glucose metabolism and diabetes
-* Various aspects of Diabetes Technology including insulin pumps, continuous glucose monitoring and automated insulin delivery systems
 * Design and implementation of experimental and clinical studies on human subjects
 * Collection, processing and analysis of sound signals
 
