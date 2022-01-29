@@ -5,8 +5,15 @@ permalink: /publications/
 author_profile: true
 ---
 
+Diabetes Technology
+------
+J. Mende, **M. Eichenlaub**, D. Waldenmaier, C. Haug, G. Freckmann, R.Ziegler (2022): "Evaluation of the Accuracy and Reliability of a Tubeless Insulin Infusion System Under Laboratory Conditions", Journal of Diabetes Science and Technology. January 2022, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211070815)\]
+
+
 Glucose Dynamics Modelling
 ------
+**M. Eichenlaub**, M.P. Saccomani, J. Hattersley, N. Khovanova (2021): "Comment on "Minimal and Maximal Models to Quantitate Glucose Metabolism: Tools to Measure, to Simulate and to Run in Silico Clinical Trials"", Journal of Diabetes Science and Technology. October 2021, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211053884)\]
+
 **M. Eichenlaub**, N. Khovanova, M. Gannon, F. Nuttall, J. Hattersley (2021):  "A Glucose-Only Model to Extract Physiological Information from Postprandial Glucose Profiles in Subjects with Normal Glucose Tolerance". In: Journal of Diabetes Science and Technology. July 2021 \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211026978#_i22)\]
 
 **M. Eichenlaub**, J. Hattersley, M. Gannon, F. Nuttall, N. Khovanova (2021):  "Bayesian identification of the oral minimal model of glucose dynamics from non-fasting conditions using a new function of glucose appearance". In: Computer Methods and Programs in Biomedicine, 200. \[[Link](https://www.sciencedirect.com/science/article/pii/S0169260720317442)\]
@@ -30,6 +37,4 @@ C. Kalkbrenner, R. Brucher, T. Kesztyüs, **M. Eichenlaub**, W. Rottbauer, D. Sc
 
 Miscellaneous
 ------
-**M. Eichenlaub**, M.P. Saccomani, J. Hattersley, N. Khovanova (2021): "Comment on "Minimal and Maximal Models to Quantitate Glucose Metabolism: Tools to Measure, to Simulate and to Run in Silico Clinical Trials"", Journal of Diabetes Science and Technology. October 2021, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211053884)\]
-
 **M. Eichenlaub** (2021): "On the relationship between a Gamma distributed precision parameter and the associated standard deviation in the context of Bayesian parameter inference", arXiv:2101.06289, \[[Link](https://arxiv.org/abs/2101.06289)\]
