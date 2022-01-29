@@ -7,7 +7,7 @@ author_profile: true
 
 Diabetes Technology
 ------
-J. Mende, **M. Eichenlaub**, D. Waldenmaier, C. Haug, G. Freckmann, R.Ziegler (2022): "Evaluation of the Accuracy and Reliability of a Tubeless Insulin Infusion System Under Laboratory Conditions", Journal of Diabetes Science and Technology. January 2022, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211070815)\]
+J. Mende, **M. Eichenlaub**, D. Waldenmaier, C. Haug, G. Freckmann, R. Ziegler (2022): "Evaluation of the Accuracy and Reliability of a Tubeless Insulin Infusion System Under Laboratory Conditions", Journal of Diabetes Science and Technology. January 2022, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211070815)\]
 
 
 Glucose Dynamics Modelling
