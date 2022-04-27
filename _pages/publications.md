@@ -7,6 +7,8 @@ author_profile: true
 
 Diabetes Technology
 ------
+**M. Eichenlaub**, R. Ziegler, L. Heinemann, D. Waldenmaier, U. Kamecke, C. Haug, G. Freckmann (2022): "Patch Pumps: Periodic Insulin Delivery Patterns". Journal of Diabetes Science and Technology. April 2022. \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968221091843)\]
+
 **M. Eichenlaub**, S. Pleus, R. Shaginian, J. Richardson, S. Pardo, A. Stuhr and G. Freckmann (2022): "Impact of Blood Glucose Monitoring System Accuracy on Clinical Decision Making for Diabetes Management". Journal of Diabetes Science and Technology. March 2022. \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968221080916)\]
 
 J. Mende, **M. Eichenlaub**, D. Waldenmaier, C. Haug, G. Freckmann, R. Ziegler (2022): "Evaluation of the Accuracy and Reliability of a Tubeless Insulin Infusion System Under Laboratory Conditions", Journal of Diabetes Science and Technology. January 2022, \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968211070815)\]
