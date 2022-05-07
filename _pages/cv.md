@@ -38,6 +38,7 @@ Awards and Grants
 
 Conferences
 ------
+* Apr. 2022: Poster presentation at the Conference on Advanced Technologies and Treatments for Diabetes, Barcelona, Spain 
 * Nov. 2019: Poster presentation at the 19th Annual Diabetes Technology Meeting, Bethesda, Maryland, USA 
 * Sept. 2019: Poster presentation at the BioMedEng19 Conference, Imperial College London, UK
 * July 2019: Oral presentation at the 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), Berlin, Germany  
