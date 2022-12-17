@@ -115,13 +115,13 @@ $$\mu_n=\dfrac{\dfrac{a_n}{b_n}y^Tf(x)+\mu_0\tau_0}{\tau_n}$$
 
 The procedure to derive the update rules for $q(\beta)$ is very similar as before. The main difference is that we want to bring the expression into the form of a log Gamma distribution, which allows us to again extract the updated hyperparameters of the $q(\beta)$. For that we have
 
-$$\begin{aligned} \log q^*(\beta) &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(w)}\\ &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)]_{q(w)} +\log p(w) + const\\ &= \frac{N}{2} \log \beta - \frac{\beta}{2}[-2y^Tf(x)\mathbb{E}[w]_{q(w)}+f(x)^Tf(x)\mathbb{E}[w^2]_{q(w)} + y^Ty] + (a_0-1)\log \beta -b_0 \beta + const\\ &= \log \beta [a_0-1+\frac{N}{2}] - \beta[b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_0})+y^Ty]]+const \end{aligned}$$
+$$\begin{aligned} \log q^*(\beta) &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)+\log p(w) + \log p(\beta)]_{q(w)}\\ &= \mathbb{E}[\log L(\mathcal{D}|w,\beta)]_{q(w)} +\log p(w) + const\\ &= \frac{N}{2} \log \beta - \frac{\beta}{2}[-2y^Tf(x)\mathbb{E}[w]_{q(w)}+f(x)^Tf(x)\mathbb{E}[w^2]_{q(w)} + y^Ty] + (a_0-1)\log \beta -b_0 \beta + const\\ &= \log \beta [a_0-1+\frac{N}{2}] - \beta[b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_n})+y^Ty]]+const \end{aligned}$$
 
 Here we have again made use of the expectations with respect to the Normal distribution at the beginning of this part. Now we can extract the hyperparameters of the updated distribution $q(\beta)$:
 
 $$a_n = a_0 + \frac{N}{2}$$
 
-$$b_n = b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_0})+y^Ty]$$
+$$b_n = b_0+\frac{1}{2}[-2y^Tf(x)\mu_n + f(x)^Tf(x)(\mu_n^2+\frac{1}{\tau_n})+y^Ty]$$
 
 ### Free Energy Decomposition
 
@@ -131,7 +131,7 @@ $$\mathcal{F} = \mathbb{E}\left[\log p(w,\beta)  + \log L(\mathcal{D}|w,\beta) -
 
 which can be expanded as follows (using the previously introduced mean-field approximation):
 
-$$\mathcal{F} = \mathbb{E}\left[\log L(\mathcal{D}|w,\beta) + \log p(w) + \log p(\beta)  - \log q(w) - \log(\beta)\right]_{q(w,\beta)},$$
+$$\mathcal{F} = \mathbb{E}\left[\log L(\mathcal{D}|w,\beta) + \log p(w) + \log p(\beta)  - \log q(w) - \log q(\beta)\right]_{q(w,\beta)},$$
 
 This gives us five terms we can evaluate separately, which is also known as the Free energy decomposition. Starting with the log-likelihood, we have:
 
