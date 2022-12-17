@@ -7,6 +7,13 @@ author_profile: true
 
 Diabetes Technology
 ------
+**M. Eichenlaub**, P. Stephan, D. Waldenmaier, S. Pleus, M. Rothenbühler, C. Haug, R. Hinzmann, A. Thomas, J. Jendle, P. Diem, G. Freckmann (2022): "Continuous Glucose Deviation Interval and Variability Analysis (CG-DIVA): A Novel Approach for the Statistical Accuracy Assessment of Continuous Glucose Monitoring Systems". Journal of Diabetes Science and Technology. November 2022. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968221134639)\]
+
+P. Stephan, **M. Eichenlaub**, D. Waldenmaier, S. Pleus, M. Rothenbühler, C. Haug, G. Freckmann (2022): "A statistical approach for assessing the compliance of 
+integrated continuous glucose monitoring systems with FDA accuracy requirements". Diabetes Technology & Therapeutics. October 2022. \[[Link](https://www.liebertpub.com/doi/10.1089/dia.2022.0331)\]
+
+S. Pleus, **M. Eichenlaub**, T. Gerber, E. Eriksson Boija, K. Makris, C. Haug, G. Freckmann (2022): "Improving the Bias of Comparator Methods in Analytical Performance Assessments Through Recalibration". Journal of Diabetes Science and Technology. October 2022. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968221133107)\]
+
 **M. Eichenlaub**, R. Ziegler, L. Heinemann, D. Waldenmaier, U. Kamecke, C. Haug, G. Freckmann (2022): "Patch Pumps: Periodic Insulin Delivery Patterns". Journal of Diabetes Science and Technology. April 2022. \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968221091843)\]
 
 **M. Eichenlaub**, S. Pleus, R. Shaginian, J. Richardson, S. Pardo, A. Stuhr and G. Freckmann (2022): "Impact of Blood Glucose Monitoring System Accuracy on Clinical Decision Making for Diabetes Management". Journal of Diabetes Science and Technology. March 2022. \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968221080916)\]
