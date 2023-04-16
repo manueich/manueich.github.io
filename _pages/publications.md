@@ -7,10 +7,12 @@ author_profile: true
 
 Diabetes Technology
 ------
-**M. Eichenlaub**, P. Stephan, D. Waldenmaier, S. Pleus, M. Rothenbühler, C. Haug, R. Hinzmann, A. Thomas, J. Jendle, P. Diem, G. Freckmann (2022): "Continuous Glucose Deviation Interval and Variability Analysis (CG-DIVA): A Novel Approach for the Statistical Accuracy Assessment of Continuous Glucose Monitoring Systems". Journal of Diabetes Science and Technology. November 2022. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968221134639)\]
+J. Kölle, **M. Eichenlaub**, J. Mende, M. Link, B. Vetter, E. Safary, S. Pleus, C. Haug, G. Freckmann (2023): "Performance Assessment of Three Continuous Glucose Monitoring Systems in Adults With Type 1 Diabetes". Journal of Diabetes Science and Technology. February 2023. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968231159657)\]
 
-P. Stephan, **M. Eichenlaub**, D. Waldenmaier, S. Pleus, M. Rothenbühler, C. Haug, G. Freckmann (2022): "A statistical approach for assessing the compliance of 
-integrated continuous glucose monitoring systems with FDA accuracy requirements". Diabetes Technology & Therapeutics. October 2022. \[[Link](https://www.liebertpub.com/doi/10.1089/dia.2022.0331)\]
+P. Stephan, **M. Eichenlaub**, D. Waldenmaier, S. Pleus, M. Rothenbühler, C. Haug, G. Freckmann (2023): "A statistical approach for assessing the compliance of 
+integrated continuous glucose monitoring systems with FDA accuracy requirements". Diabetes Technology & Therapeutics. 25(3). \[[Link](https://www.liebertpub.com/doi/10.1089/dia.2022.0331)\]
+
+**M. Eichenlaub**, P. Stephan, D. Waldenmaier, S. Pleus, M. Rothenbühler, C. Haug, R. Hinzmann, A. Thomas, J. Jendle, P. Diem, G. Freckmann (2022): "Continuous Glucose Deviation Interval and Variability Analysis (CG-DIVA): A Novel Approach for the Statistical Accuracy Assessment of Continuous Glucose Monitoring Systems". Journal of Diabetes Science and Technology. November 2022. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968221134639)\]
 
 S. Pleus, **M. Eichenlaub**, T. Gerber, E. Eriksson Boija, K. Makris, C. Haug, G. Freckmann (2022): "Improving the Bias of Comparator Methods in Analytical Performance Assessments Through Recalibration". Journal of Diabetes Science and Technology. October 2022. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968221133107)\]
 
