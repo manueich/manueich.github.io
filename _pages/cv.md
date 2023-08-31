@@ -23,7 +23,7 @@ Education
 
 Experience
 ------
-* since 2021: **Junior Scientist** at the Institute for Diabetes-Technology at the University of Ulm, Germany
+* since 2021: **Scientist** at the Institute for Diabetes-Technology at the University of Ulm, Germany
 * 2010 - 2020: **Teaching support** at the Universities of Applied Sciences Furtwangen and Ulm as well as the University of Warwick through project student supervision and demonstration in various subjects including mathematics, electronics, computer science, mechanics, robotics and mathematical modelling. 
 * 2017 - 2019: **Peer-review** in the scientific journals *Scientific Reports*, *Mathematical Biosciences and Engineering* and *Advances in Differential Equations*
 * 2015 - 2016: **Academic employee** at the University of Applied Sciences Ulm, developing hardware and signal processing methods for the detection of sleep apnea in breath sound recordings and implementing a clinical study to examine the efficacy of an ambulatory sleep monitoring system.
