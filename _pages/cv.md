@@ -38,7 +38,8 @@ Awards and Grants
 
 Conferences
 ------
-* Nov. 2022: Poster presentation at Annual Diabetes Technology Meeting, Bethesda, Maryland, USA 
+* Nov. 2023: Invited Talk at Virtual Diabetes Technology Meeting
+* Nov. 2022: Poster presentation at Virtual Diabetes Technology Meeting
 * Apr. 2022: Poster presentation at the Conference on Advanced Technologies and Treatments for Diabetes, Barcelona, Spain 
 * Nov. 2019: Poster presentation at the Annual Diabetes Technology Meeting, Bethesda, Maryland, USA 
 * Sept. 2019: Poster presentation at the BioMedEng19 Conference, Imperial College London, UK
