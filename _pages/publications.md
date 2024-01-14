@@ -7,6 +7,10 @@ author_profile: true
 
 Diabetes Technology
 ------
+**M. Eichenlaub**, et al. (2024): "Comparator Data Characteristics and Testing Procedures for the Clinical Performance Evaluation of Continuous Glucose Monitoring Systems". Diabetes Technology & Therapeutics. January 202. \[[Link](https://www.liebertpub.com/doi/abs/10.1089/dia.2023.0465)\]
+
+S. Pleus, M. Link, R. Hinzmann, S. Oter, **M. Eichenlaub**, et al. (2023): "Effect of Arterialization on Venous Blood Glucose Concentrations and Implications for Observed Continuous Glucose Monitoring Accuracy". Diabetes Technology & Therapeutics. December 2023. \[[Link](https://www.liebertpub.com/doi/abs/10.1089/dia.2023.0489)\]
+
 G. Freckmann, **M. Eichenlaub**, D. Waldenmaier, et al. (2023): "Clinical Performance Evaluation of Continuous Glucose Monitoring Systems: A Scoping Review and Recommendations for Reporting". Journal of Diabetes Science and Technology. August 2023. \[[Link](https://journals.sagepub.com/doi/full/10.1177/19322968231190941)\]
 
 J. Kölle, **M. Eichenlaub**, J. Mende, M. Link, B. Vetter, E. Safary, S. Pleus, C. Haug, G. Freckmann (2023): "Performance Assessment of Three Continuous Glucose Monitoring Systems in Adults With Type 1 Diabetes". Journal of Diabetes Science and Technology. February 2023. \[[Link](https://journals.sagepub.com/doi/10.1177/19322968231159657)\]
